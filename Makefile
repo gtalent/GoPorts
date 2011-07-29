@@ -1,15 +1,12 @@
 build:
-	gmake -C dml/ build
-	gmake -C liccor/ build
-	gmake -C loc/ build
-	gmake -C ttime/ build
+	gomake -C devel/ build
+	gomake -C utils/ build
 install: build
-	gmake -C dml/ install
-	gmake -C liccor/ install
-	gmake -C loc/ install
-	gmake -C ttime/ install
+	gomake -C devel/ install
+	gomake -C utils/ install
+deinstall:
+	gomake -C devel/ deinstall
+	gomake -C utils/ deinstall
 clean:
-	gmake -C dml/ clean
-	gmake -C liccor/ clean
-	gmake -C loc/ clean
-	gmake -C ttime/ clean
+	gomake -C devel/ clean
+	gomake -C utils/ clean
