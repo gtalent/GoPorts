@@ -1,4 +1,5 @@
 build: src
+	gofix src
 	gomake -C src
 install: .install
 .install: build .install
