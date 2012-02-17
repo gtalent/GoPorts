@@ -1,4 +1,4 @@
-PKG_NAME="web.a"
+PKG_NAME="github.com/hoisie/web.go.a"
 build: src
 	gomake -C src
 src:
